@@ -72,7 +72,7 @@ resource "oci_core_network_security_group_security_rule" "ingress_rule" {
         min = udp_options.value.min
       }
     }
-  }
+  } 
 }
 
 // Create EGRESS rules
