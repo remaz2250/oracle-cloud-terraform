@@ -50,7 +50,7 @@ resource "oci_core_network_security_group_security_rule" "ingress_rule" {
   direction                 = "INGRESS"
   protocol                  = lookup(local.protocols, each.value.protocol)
   description               = each.value.rulename
-  stateless                 = false
+  stateless                 = false 
   source                    = each.value.ip
   source_type               = "CIDR_BLOCK"
 
