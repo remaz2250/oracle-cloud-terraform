@@ -62,7 +62,7 @@ resource "oci_core_instance" "instances" {
     is_live_migration_preferred = each.value.config.availability_config.is_live_migration_preferred
     recovery_action             = each.value.config.availability_config.recovery_action
   }
-
+  
   lifecycle {
     ignore_changes = [
       metadata
